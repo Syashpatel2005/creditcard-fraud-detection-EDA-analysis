@@ -24,7 +24,8 @@ st.title("📊 Credit Card Fraud Detection — Insights Dashboard")
 # Load dataset
 @st.cache_data
 def load_data():
-    return pd.read_csv("creditcard.csv")
+    url = "https://drive.google.com/uc?export=download&id=1i3spxjoDVPHpeWPfrtfV49jGb2ONKa6I"
+    return pd.read_csv(url)
 
 df = load_data()
 
